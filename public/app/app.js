@@ -17,10 +17,10 @@ angular.module('VerdictApp', ['ui.router'])
     templateUrl: 'app/views/randomNum.html',
     // controller: 'RandomNumCtrl'
   })
-  .state('8ball', {
-    url: '/8ball',
-    templateUrl: 'app/views/8ball.html',
-    // controller: '8ballCtrl'
+  .state('eightball', {
+    url: '/eightball',
+    templateUrl: 'app/views/eightball.html',
+    // controller: 'eightballCtrl'
   })
   // .state('coinFlip', {
   //   url: '/coinFlip',

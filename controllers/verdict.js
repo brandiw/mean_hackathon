@@ -8,6 +8,7 @@ router.route('/')
     //   if (err) return res.status(500).send(err);
     //   return res.send(airplanes);
     // });
+    console.log('verdict.js file firing');
   })
   // .post(function(req, res) {
     // Airplane.create(req.body, function(err, airplane) {
