@@ -1,4 +1,4 @@
-angular.module('AirplaneApp', ['ui.router'])
+angular.module('VerdictApp', ['ui.router'])
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/');
 
@@ -8,16 +8,31 @@ angular.module('AirplaneApp', ['ui.router'])
     templateUrl: 'app/views/home.html',
     controller: 'HomeCtrl'
   })
-  .state('airplane', {
-    url: '/airplane/:id',
-    templateUrl: 'app/views/displayAirplane.html',
-    controller: 'AirplaneCtrl'
+  .state('poll', {
+    url: '/poll',
+    templateUrl: 'app/views/poll.html',
+    controller: 'PollCtrl'
   })
-  .state('edit-airplane', {
-    url: '/airplane/:id/edit',
-    templateUrl: 'app/views/editAirplane.html',
-    controller: 'AirplaneCtrl'
-  });
+  .state('randomNum', {
+    url: '/randomNum',
+    templateUrl: 'app/views/randomNum.html',
+    controller: 'RandomNumCtrl'
+  })
+  .state('8ball', {
+    url: '/8ball',
+    templateUrl: 'app/views/8ball.html',
+    controller: '8ballCtrl'
+  })
+  .state('coinFlip', {
+    url: '/coinFlip',
+    templateUrl: 'app/views/coinFlip.html',
+    controller: 'CoinFlipCtrl'
+  })
+  .state('wheel', {
+    url: '/wheel',
+    templateUrl: 'app/views/wheel.html',
+    controller: 'WheelCtrl'
+  })
 
   $locationProvider.html5Mode(true);
 }]);
