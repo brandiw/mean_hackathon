@@ -1,0 +1,54 @@
+body {
+	width: 100%;
+	margin: 0;
+	font-family: arial;
+	font-size: 18px;
+}
+/*home*/
+.home-container{
+	display: flex;
+	justify-content: center;
+}
+.home-h1 {
+
+}
+
+
+
+
+/* ------------  EIGHTBALL STYLES  ------------- */
+
+.eightball-ball {
+	display: flex;
+	justify-content: center;
+	width: 500px;
+	height: 500px;
+	background-color: black;
+	border-radius: 250px;
+}
+
+.eightball-message-container {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-color: white;
+}
+
+.eightball-shake-container {
+	display: flex;
+	align-self: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-color: blue;
+	display: none;
+}
+
+.eightball-message {
+	display: flex;
+	align-self: center;
+	font-size: 14px;
+}
