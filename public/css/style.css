@@ -1,0 +1,14 @@
+body {
+	width: 100%;
+	margin: 0;
+	font-family: arial;
+	font-size: 18px;
+}
+/*home*/
+.home-container{
+	display: flex;
+	justify-content: center;
+}
+.home-h1 {
+
+}
