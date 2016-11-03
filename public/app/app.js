@@ -1,14 +1,25 @@
-//I recommend changing the name 'MeanHackathon' to reflect your own project name
-angular.module("MeanHackathon", ["ui.router"])
-.config(["$stateProvider", "$urlRouterProvider", "$locationProvider", function($stateProvider, $urlRouterProvider, $locationProvider) {
-  //This is what to do with an unknown state
+angular.module('AirplaneApp', ['ui.router'])
+.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/');
 
-  //Your route definitions can be written here.
-  $stateProvider.state("home", {
-    url: "/",
-    templateUrl: "app/views/home.html"
+  $stateProvider
+  .state('home', {
+    url: '/',
+    templateUrl: 'app/views/home.html',
+    controller: 'HomeCtrl'
+  })
+  .state('airplane', {
+    url: '/airplane/:id',
+    templateUrl: 'app/views/displayAirplane.html',
+    controller: 'AirplaneCtrl'
+  })
+  .state('edit-airplane', {
+    url: '/airplane/:id/edit',
+    templateUrl: 'app/views/editAirplane.html',
+    controller: 'AirplaneCtrl'
   });
 
   $locationProvider.html5Mode(true);
 }]);
+
+
