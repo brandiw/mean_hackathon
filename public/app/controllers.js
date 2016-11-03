@@ -1,4 +1,4 @@
-angular.module('AirplaneApp')
+angular.module('VerdictApp')
 .controller('HomeCtrl', ['$scope', 'AirplaneService', function($scope, AirplaneService) {
   $scope.airplanes = [];
   $scope.newAirplane = {
