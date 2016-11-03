@@ -32,6 +32,10 @@ angular.module('VerdictApp', ['ui.router'])
   //   templateUrl: 'app/views/wheel.html',
     // controller: 'WheelCtrl'
   // })
+  .state('idea-generator', {
+    url: '/ideaGen',
+    templateUrl: 'app/views/ideaGen.html',
+  })
 
   $locationProvider.html5Mode(true);
 }]);
