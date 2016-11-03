@@ -11,11 +11,19 @@
 		ideaGen.idea = "";
 		ideaGen.test = "Test";
 
-		// IdeaGenService.getIdea()
-		// 	.then(function(res) {
-		// 		console.log("Response in controller", res);
-		// 		ideaGen.idea = res;
-		// 	});
+		IdeaGenService.getIdea()
+			.then(function(res) {
+				console.log("Response in controller", res);
+				ideaGen.idea = res;
+			});
+
+		ideaGen.another = function() {
+			IdeaGenService.getIdea()
+				.then(function(res) {
+					console.log("Response in controller", res);
+					ideaGen.idea = res;
+				});
+		}
 
 	};
 

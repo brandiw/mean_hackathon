@@ -16,12 +16,12 @@ angular.module('VerdictApp')
   }])
   .service("IdeaGenService", ["$http", function($http) {
     this.getIdea = function() {
-      $http({
-        url: "/api/idea-generator",
-        method: "get"
+     return  $http({
+        url: "/random/",
+        method: "GET"
       }).then(function(res) {
         console.log("idea response from service", res);
-        return res;
+        return res.data;
       })
     };
   }]);
