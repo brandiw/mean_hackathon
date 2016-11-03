@@ -6,33 +6,32 @@ angular.module('VerdictApp', ['ui.router'])
   .state('home', {
     url: '/',
     templateUrl: 'app/views/home.html',
-    controller: 'HomeCtrl'
   })
-  .state('poll', {
-    url: '/poll',
-    templateUrl: 'app/views/poll.html',
-    controller: 'PollCtrl'
-  })
+  // .state('poll', {
+  //   url: '/poll',
+  //   templateUrl: 'app/views/poll.html',
+  //   // controller: 'PollCtrl'
+  // })
   .state('randomNum', {
     url: '/randomNum',
     templateUrl: 'app/views/randomNum.html',
-    controller: 'RandomNumCtrl'
+    // controller: 'RandomNumCtrl'
   })
   .state('8ball', {
     url: '/8ball',
     templateUrl: 'app/views/8ball.html',
-    controller: '8ballCtrl'
+    // controller: '8ballCtrl'
   })
-  .state('coinFlip', {
-    url: '/coinFlip',
-    templateUrl: 'app/views/coinFlip.html',
-    controller: 'CoinFlipCtrl'
-  })
-  .state('wheel', {
-    url: '/wheel',
-    templateUrl: 'app/views/wheel.html',
-    controller: 'WheelCtrl'
-  })
+  // .state('coinFlip', {
+  //   url: '/coinFlip',
+  //   templateUrl: 'app/views/coinFlip.html',
+    // controller: 'CoinFlipCtrl'
+  // })
+  // .state('wheel', {
+  //   url: '/wheel',
+  //   templateUrl: 'app/views/wheel.html',
+    // controller: 'WheelCtrl'
+  // })
 
   $locationProvider.html5Mode(true);
 }]);

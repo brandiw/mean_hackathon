@@ -63,4 +63,4 @@ angular.module('VerdictApp')
 //       $state.go('airplane', {id: $scope.airplane._id});
 //     });
 //   }
-}]);
+// }]);
