@@ -1,21 +1,19 @@
-//Require what you need.
 var express = require('express');
-var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var app = express();
+var mongoose = require('mongoose');
 
-//Connect to Mongoose
-mongoose.connect('mongodb://localhost/meanhackathon');
+mongoose.connect('mongodb://localhost/airplanes');
 
-//Use statements
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(require('morgan')('dev'));
 
-//Remember - the /* means we are catching all the incoming routes
-//and letting angular handle them instead.
-app.get('/*', function(req, res) {
+app.use('/api/airplanes', require('./controllers/airplane'));
+
+app.get('/*', function(req, res){
   res.sendFile(__dirname + '/public/index.html');
 });
 
-app.listen(process.env.PORT || 3000);
+var server = app.listen(process.env.PORT || 3000);
