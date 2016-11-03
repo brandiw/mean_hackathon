@@ -13,6 +13,17 @@ angular.module('VerdictApp')
         console.log(res);
       });
     }
+  }])
+  .service("IdeaGenService", ["$http", function($http) {
+    this.getIdea = function() {
+      $http({
+        url: "/api/idea-generator",
+        method: "get"
+      }).then(function(res) {
+        console.log("idea response from service", res);
+        return res;
+      })
+    };
   }]);
 
 
