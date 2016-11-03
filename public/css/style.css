@@ -22,17 +22,20 @@ h1 {
 	flex-flow: column;
 }
 .home-icon-container {
+	padding: 30px;
 	margin-top: 50px;
-	width: 650px;
-	height: 600px;
+	width: 700px;
 	background-color: red;
 	display: flex;
 	flex-flow: row wrap	;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-self: center;
+	align-content: center;
 }
 .home-icon {
 	width: 200px;
 	height: 200px;
+	margin: 15px;
 	background-color: blue;
+	background-image: url();
 }
