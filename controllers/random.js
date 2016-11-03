@@ -41,8 +41,7 @@ router.route('/')
     nouns = word.attributes.word
   });
   randomWordPromise.done(function(wordModel) {
-    var randomSentence = "The " + wordModel.attributes.word + " " + noun + " that " + verb + " " + nouns;
-    res.send(randomSentence);
+    res.send("The " + wordModel.attributes.word + " " + noun + " that " + verb + " " + nouns);
   });
 });
 

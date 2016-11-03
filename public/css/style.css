@@ -297,3 +297,37 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
 to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); transform: rotateY(2160deg); }
 }
+
+/*idea generator*/
+.idea-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+.idea-idea {
+	padding-top: 50px;
+	font-size: 72px;
+	text-align: center;
+	color: 
+}
+.idea-button {
+	box-sizing: border-box;
+	border: solid black 1px;
+	align-self: center;
+	text-align: center;
+	margin-top: 50px;
+	width: 80%;
+	padding: 50px 0;
+	font-size: 48px;
+}
+.idea-button:hover {
+	border: solid #C3545B 1px;
+	color: #C3545B;
+	width: 85%;
+}
+.idea-bottom-img {
+	width: 100%;
+	height: 200px;
+	background-image: url(/img/idea.svg);
+}
