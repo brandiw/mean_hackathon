@@ -18,7 +18,11 @@
 			});
 
 		ideaGen.another = function() {
-			getIdea
+			IdeaGenService.getIdea()
+				.then(function(res) {
+					console.log("Response in controller", res);
+					ideaGen.idea = res;
+				});
 		}
 
 	};
