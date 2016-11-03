@@ -19,7 +19,7 @@ angular.module('VerdictApp', ['ui.router'])
   })
   .state('eightball', {
     url: '/eightball',
-    templateUrl: 'app/views/eightball.html',
+    templateUrl: 'app/views/eightball.html'
     // controller: 'eightballCtrl'
   })
   // .state('coinFlip', {
