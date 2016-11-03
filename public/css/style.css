@@ -3,12 +3,36 @@ body {
 	margin: 0;
 	font-family: arial;
 	font-size: 18px;
+	color: #333;
+	background-color: #7FBA9E;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
 }
 /*home*/
-.home-container{
-	display: flex;
-	justify-content: center;
-}
 .home-h1 {
-
+	padding-top: 50px;
+	align-self: center;
+	font-size: 72px;
+}
+.home-container {
+	display: flex;
+	flex-flow: column;
+}
+.home-icon-container {
+	margin-top: 50px;
+	width: 650px;
+	height: 600px;
+	background-color: red;
+	display: flex;
+	flex-flow: row wrap	;
+	justify-content: space-between;
+	align-self: center;
+}
+.home-icon {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
 }
