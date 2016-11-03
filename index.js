@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var APIKEY = '5dbc8c5760ea7e0b2270b05eb0b070279deab3507574e072d';
 var Wordnik = require('wordnik-bb').init(APIKEY);
 
-mongoose.connect('mongodb://localhost/eightball');
+mongoose.connect('mongodb://localhost/verdict');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
@@ -14,6 +14,8 @@ app.use(require('morgan')('dev'));
 
 app.use('/api/verdict', require('./controllers/verdict'));
 app.use('/random', require('./controllers/random.js'));
+app.use('/api/eightballs', require('./controllers/eightball-controller'));
+
 
 app.get('/*', function(req, res){
   res.sendFile(__dirname + '/public/index.html');
