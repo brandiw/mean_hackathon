@@ -141,6 +141,16 @@ a:hover {
 }
 
 /*coin flip*/
+.coin-flip-text-container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 50px;
+}
+.coin-flip-text-container div {
+	display: block;
+	width: 100%;
+}
 #coin-flip-cont {
 width: 200px;
 height: 200px;
