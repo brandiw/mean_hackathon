@@ -40,10 +40,12 @@
 
 	#message1 {
 	    text-align: center;
-	    margin-top: 75px;
 	    color: white;
 	    font-size: 18px;
-	    margin-left: 110px;
+	    display: flex;
+	    align-self: center;
+	    max-width: 85px;
+	    z-index: 1;
 	}
 
 	.eightball-message2 {
@@ -67,7 +69,7 @@
     width: 500px;
     height: 500px;
     border-radius: 250px;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/eb/Magic_eight_ball.png');
+    background-image: url("/img/Magic_eight_ball.png");
     background-size: contain;
 	}
 
@@ -87,22 +89,8 @@
 </div> -->
 
 <div class="eightball-ball1" id="eightball">
-	<div class="ring">
-		<div class="inner-ring">
-			<div class="eightball-screen1">
-				<!-- <div ng-if="eightballmsg.shaking" class="shake-container"></div> -->	
-				<div class="message-container1">	
-					<!-- <div class="eightball-message1"> -->
-						<div id="message1" class="eightball-message1">	
-							{{eightballmsg.randommsg}}
-						</div>
-						<div ng-if="eightballmsg.shaking" class="eightball-message2">
-						</div>
-					<!-- </div> -->
-				</div>
-				<!-- </div> -->
-			</div>
-		</div>
+	<div id="message1" class="eightball-message1">	
+		{{eightballmsg.randommsg}}
 	</div>
 </div>
 

@@ -31,13 +31,13 @@
 
 
 
-        $('#message1').css("color", "#000080");
+        $('#message1').css("z-index", -1);
         $('#eightball').effect("shake");
         //shakeWait();
         console.log('shaking?', eightballmsg.shaking);
         setTimeout(function() {
           eightballmsg.shaking = false;
-          $('#message1').css("color", "white");
+          $('#message1').css("z-index", 1);
           console.log('timeout: ', eightballmsg.shaking);
         }, 1000);
     }
