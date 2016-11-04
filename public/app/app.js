@@ -1,5 +1,5 @@
-angular.module('VerdictApp', ['ui.router'])
-.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+angular.module('VerdictApp', ['ui.router', 'rzModule'])
+.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider, rzModule) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider

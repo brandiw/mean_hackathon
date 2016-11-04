@@ -386,33 +386,42 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 
 /*randomNum */
 .randomNum {
- width: 80%;
- text-align: center;
- margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center;
 }
 .randomNum-sliderDiv {
- width: 80%;
- text-align: center;
+	width: 80%;
+	text-align: center;
+	margin-top: 30px
 }
 .randomNum-genNumButton{
 	box-sizing: border-box;
 	border: solid black 1px;
 	align-self: center;
 	text-align: center;
-	margin-top: 50px;
-	width: 80%;
-	padding: 50px 0;
+	margin-top: 30px;
+	padding: 30px;
+	width: 100%;
 	font-size: 48px;
+	align-self: center;
 }
 .randomNum-genNumButton:hover {
 	border: solid #C3545B 1px;
 	color: #C3545B;
-	width: 85%;
 }
 .randomNum-minMax{
  width: 60px;
  font-size: 20px;
 }
 .rzslider {
-	height: 100px;
+	margin-top: 50px;
+}
+.randomNum-result {
+	font-size: 120px;
+	color: #C3545B;
 }
