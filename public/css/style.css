@@ -385,12 +385,23 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
  text-align: center;
 }
 .randomNum-genNumButton{
- font-size: 18px;
+	box-sizing: border-box;
+	border: solid black 1px;
+	align-self: center;
+	text-align: center;
+	margin-top: 50px;
+	width: 80%;
+	padding: 50px 0;
+	font-size: 48px;
+/* font-size: 18px;
  border-radius: 5px;
  background-color: #42aaf4 ;
- color: white;
+ color: white;*/
 }
 .randomNum-minMax{
  width: 60px;
  font-size: 20px;
+}
+.rzslider {
+	height: 100px;
 }
