@@ -68,59 +68,66 @@ td.pw3
     margin-bottom: 5px;
 }
 </style>
+<div class="page-container">
+    <nav-bar></nav-bar>
+    
+    <div>
+        <div align="center">
+            <h2>Get the Wheels Turning!</h2>
 
-<div align="center">
-    <h2>Get the Wheels Turning!</h2>
+            <p>Enter your options below. Choose a power setting then press the Spin button. You will be alerted to the verdict when the spinning stops.</p>
+            <br />
+            <form id="wheel-creator">
+                Option 1: <input id="opt1" type="text">
+                Option 2: <input id="opt2" type="text">
+                Option 3: <input id="opt3" type="text">
+                <br>
+                Option 4: <input id="opt4" type="text">
+                Option 5: <input id="opt5" type="text">
+                Option 6: <input id="opt6" type="text">
+                <br>
+                <button type="submit" style="font-size: 15px; border-radius: 5px; margin: 5px">Add Options</button>
+                <button type="reset" style="font-size: 15px; border-radius: 5px; margin: 5px">Reset Options</button>
+                <input type="reset" value="Reset Everything" onClick="window.location.reload()" style="font-size: 15px; border-radius: 5px; margin: 5px">
 
-    <p>Enter your options below. Choose a power setting then press the Spin button. You will be alerted to the verdict when the spinning stops.</p>
-    <br />
-    <form id="wheel-creator">
-        Option 1: <input id="opt1" type="text">
-        Option 2: <input id="opt2" type="text">
-        Option 3: <input id="opt3" type="text">
-        <br>
-        Option 4: <input id="opt4" type="text">
-        Option 5: <input id="opt5" type="text">
-        Option 6: <input id="opt6" type="text">
-        <br>
-        <button type="submit" style="font-size: 15px; border-radius: 5px; margin: 5px">Add Options</button>
-        <button type="reset" style="font-size: 15px; border-radius: 5px; margin: 5px">Reset Options</button>
-        <input type="reset" value="Reset Everything" onClick="window.location.reload()" style="font-size: 15px; border-radius: 5px; margin: 5px">
-
-    </form>
-    <table cellpadding="0" cellspacing="0" border="0">
-    <tr>
-        <td>
-            <div class="power_controls">
-                <br />
-                <br />
-                <table class="power" cellpadding="10" cellspacing="0">
-                    <tr>
-                        <th align="center">Power</th>
-                    </tr>
-                    <tr>
-                        <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High</td>
-                    </tr>
-                    <tr>
-                        <td align="center" id="pw2" onClick="powerSelected(2);">Med</td>
-                    </tr>
-                    <tr>
-                        <td align="center" id="pw1" onClick="powerSelected(1);">Low</td>
-                    </tr>
-                </table>
-                <br />
-                <button id="spin_button" alt="Spin" onClick="startSpin();" style="font-size: 20px; border-radius: 5px; background-color: #89f26e">Spin</button>
-                <br /><br />
-                <button onClick="resetWheel(); return false;" style="font-size: 20px; border-radius: 5px; background-color: #e7706f">Reset Spin</button>
-            </div>
-        </td>
-        <td width="438" height="582" class="the_wheel" align="center" valign="center">
-            <canvas id="canvas" width="434" height="434">
-                <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
-            </canvas>
-        </td>
-    </tr>
-</table>
+            </form>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <div class="power_controls">
+                            <br />
+                            <br />
+                            <table class="power" cellpadding="10" cellspacing="0">
+                                <tr>
+                                    <th align="center">Power</th>
+                                </tr>
+                                <tr>
+                                    <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High</td>
+                                </tr>
+                                <tr>
+                                    <td align="center" id="pw2" onClick="powerSelected(2);">Med</td>
+                                </tr>
+                                <tr>
+                                    <td align="center" id="pw1" onClick="powerSelected(1);">Low</td>
+                                </tr>
+                            </table>
+                            <br />
+                            <button id="spin_button" alt="Spin" onClick="startSpin();" style="font-size: 20px; border-radius: 5px; background-color: #89f26e">Spin</button>
+                            <br /><br />
+                            <button onClick="resetWheel(); return false;" style="font-size: 20px; border-radius: 5px; background-color: #e7706f">Reset Spin</button>
+                        </div>
+                    </td>
+                    <td width="438" height="582" class="the_wheel" align="center" valign="center">
+                        <canvas id="canvas" width="434" height="434">
+                            <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+                        </canvas>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</div>
 <script>
     var segments = [
        {'fillStyle' : '#eae56f', 'text' : 'Yellow 1'},

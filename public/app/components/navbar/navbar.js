@@ -10,5 +10,4 @@
     
   }
 
-  EightballMessage.$inject = [];
 })()

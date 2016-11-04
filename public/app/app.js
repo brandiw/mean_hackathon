@@ -1,5 +1,5 @@
-angular.module('VerdictApp', ['ui.router'])
-.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+angular.module('VerdictApp', ['ui.router', 'rzModule'])
+.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider, rzModule) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
@@ -7,11 +7,11 @@ angular.module('VerdictApp', ['ui.router'])
     url: '/',
     templateUrl: 'app/views/home.html',
   })
-  // .state('poll', {
-  //   url: '/poll',
-  //   templateUrl: 'app/views/poll.html',
-  //   // controller: 'PollCtrl'
-  // })
+  .state('poll', {
+    url: '/poll',
+    templateUrl: 'app/views/poll.html',
+    // controller: 'PollCtrl'
+  })
   .state('randomNum', {
     url: '/randomNum',
     templateUrl: 'app/views/randomNum.html',
