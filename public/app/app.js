@@ -7,11 +7,11 @@ angular.module('VerdictApp', ['ui.router', 'rzModule'])
     url: '/',
     templateUrl: 'app/views/home.html',
   })
-  // .state('poll', {
-  //   url: '/poll',
-  //   templateUrl: 'app/views/poll.html',
-  //   // controller: 'PollCtrl'
-  // })
+  .state('poll', {
+    url: '/poll',
+    templateUrl: 'app/views/poll.html',
+    // controller: 'PollCtrl'
+  })
   .state('randomNum', {
     url: '/randomNum',
     templateUrl: 'app/views/randomNum.html',

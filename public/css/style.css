@@ -452,3 +452,17 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 	font-size: 120px;
 	color: #C3545B;
 }
+
+/*poll*/
+.poll-box {
+	width: 300px;
+	height: 300px;
+	border: solid black 1px;
+	margin: 20px;
+}
+.poll-box-left {
+	background-color: blue;
+}
+.poll-box-right {
+	background-color: red;
+}
