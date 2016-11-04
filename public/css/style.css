@@ -157,12 +157,14 @@ a:hover {
 	width: 80%;
 	padding: 50px 0;
 	font-size: 48px;
+	cursor: pointer;
 }
 
 .eightball-button:hover {
 	border: solid #C3545B 1px;
 	color: #C3545B;
 	width: 85%;
+	cursor: pointer;
 }
 
 .eightball-message-container {
