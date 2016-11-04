@@ -4,7 +4,7 @@ body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
     color: #333;
-    background-image: url(https://images.unsplash.com/photo-1415045384817-2f9cf7f2ed79?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=3a19895ba96c326b0994d56599047e55);
+    background-image: url("/img/background-min.jpg");
     background-size: cover;
 }
 h1 {
@@ -229,6 +229,7 @@ transform-style: preserve-3d;
 position: absolute;
 width: 200px;
 height: 200px;
+cursor: pointer;
 }
 
 #coin .front {
