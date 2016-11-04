@@ -25,6 +25,33 @@ a:hover {
   color: #ED8AC2;
 }
 
+.page-container {
+	display: flex;
+	direction: row;
+}
+
+/*navbar*/
+.navbar-container {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    overflow: scroll;
+    background-color: rgb(195, 84, 91);
+}
+.navbar-icon {
+	border: 1px solid black;
+	width: 75px;
+	height: 75px;
+	margin: 15px;
+	display: flex;
+	flex-flow: column;
+	padding: 15px;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+
 /*home*/
 .home-h1 {
     padding-top: 50px;
@@ -141,6 +168,14 @@ a:hover {
 }
 
 /*coin flip*/
+
+.coin-flip-container {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}
 .coin-flip-text-container{
 	display: flex;
 	flex-direction: column;
@@ -152,15 +187,14 @@ a:hover {
 	width: 100%;
 }
 #coin-flip-cont {
-width: 200px;
-height: 200px;
-position: absolute;
-top: calc(50% - 100px);
-left: calc(50% - 100px);
+	width: 200px;
+	height: 200px;
+	align-self: center;
+	margin-top: 50px;
 }
 
 #coin {
-position: relative;
+/*position: relative;*/
 width: 200px;
 transform-style: preserve-3d;
 }
@@ -343,7 +377,6 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
   height: 200px;
   margin-top: 50px;
   background-image: url(/img/idea.svg);
-=======
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -376,12 +409,6 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 	height: 200px;
 	margin-top: 50px;
 	background-image: url(/img/idea.svg);
-}
-/*navbar*/
-.navbar {
-    width: 100px;
-    position: fixed;
-    left: 0;
 }
 
 /*randomNum */
