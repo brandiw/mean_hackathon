@@ -393,11 +393,13 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
   width: 80%;
   padding: 50px 0;
   font-size: 48px;
+  cursor: pointer;
 }
 .idea-button:hover {
   border: solid #C3545B 1px;
   color: #C3545B;
   width: 85%;
+  cursor: pointer;
 }
 .idea-bottom-img {
   width: 100%;
@@ -425,11 +427,13 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 	width: 80%;
 	padding: 50px 0;
 	font-size: 48px;
+	cursor: pointer;
 }
 .idea-button:hover {
 	border: solid #C3545B 1px;
 	color: #C3545B;
 	width: 85%;
+	cursor: pointer;
 }
 .idea-bottom-img {
 	width: 100%;
@@ -463,10 +467,12 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 	width: 100%;
 	font-size: 48px;
 	align-self: center;
+	cursor: pointer;
 }
 .randomNum-genNumButton:hover {
 	border: solid #C3545B 1px;
 	color: #C3545B;
+	cursor: pointer;
 }
 .randomNum-minMax{
  width: 60px;
