@@ -22,11 +22,11 @@ angular.module('VerdictApp', ['ui.router'])
     templateUrl: 'app/views/eightball.html'
     // controller: 'eightballCtrl'
   })
-  // .state('coinFlip', {
-  //   url: '/coinFlip',
-  //   templateUrl: 'app/views/coinFlip.html',
-    // controller: 'CoinFlipCtrl'
-  // })
+  .state('coinFlip', {
+    url: '/coinFlip',
+    templateUrl: 'app/views/coinFlip.html',
+    controller: 'CoinCtrl'
+  })
   // .state('wheel', {
   //   url: '/wheel',
   //   templateUrl: 'app/views/wheel.html',
@@ -39,5 +39,4 @@ angular.module('VerdictApp', ['ui.router'])
 
   $locationProvider.html5Mode(true);
 }]);
-
 
