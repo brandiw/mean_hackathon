@@ -75,22 +75,29 @@
 
 </style>
 
-<button ng-click="eightballmsg.shakeIt()">SHAKE</button>
+<div class="page-container">
+	<div>
+		<nav-bar></nav-bar>
+	</div>
+	<div class="eightball-container">
+		<div class=eightball-button ng-click="eightballmsg.shakeIt()">SHAKE</div>
 
-<!-- <div class="eightball-ball" id="eightball">
-	<div class="eightball-screen">
-		<div ng-if="eightballmsg.shaking" class="shake-container"></div>	
-		<div ng-if="!eightballmsg.shaking" class="eightball-message-container">
-			<div ng-if="!eightballmsg.shaking" class="eightball-message">
-				<div>{{eightballmsg.randommsg}}</div>
+		<!-- <div class="eightball-ball" id="eightball">
+			<div class="eightball-screen">
+				<div ng-if="eightballmsg.shaking" class="shake-container"></div>	
+				<div ng-if="!eightballmsg.shaking" class="eightball-message-container">
+					<div ng-if="!eightballmsg.shaking" class="eightball-message">
+						<div>{{eightballmsg.randommsg}}</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="eightball-ball1" id="eightball">
+			<div id="message1" class="eightball-message1">	
+				{{eightballmsg.randommsg}}
 			</div>
 		</div>
-	</div>
-</div> -->
-
-<div class="eightball-ball1" id="eightball">
-	<div id="message1" class="eightball-message1">	
-		{{eightballmsg.randommsg}}
 	</div>
 </div>
 

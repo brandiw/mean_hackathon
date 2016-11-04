@@ -141,6 +141,30 @@ a:hover {
   border-radius: 250px;
 }
 
+/*.eightball-container {
+	display: flex;
+	direction: column;
+	align-content: center;
+	justify-content: center;
+}*/
+
+.eightball-button {
+	box-sizing: border-box;
+	border: solid black 1px;
+	align-self: center;
+	text-align: center;
+	margin-top: 50px;
+	width: 80%;
+	padding: 50px 0;
+	font-size: 48px;
+}
+
+.eightball-button:hover {
+	border: solid #C3545B 1px;
+	color: #C3545B;
+	width: 85%;
+}
+
 .eightball-message-container {
   display: flex;
   justify-content: center;

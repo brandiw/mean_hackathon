@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var http = require('http').Server(router);
 var io = require('socket.io')(http);
-// var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 
 var leftVotes = 0;
