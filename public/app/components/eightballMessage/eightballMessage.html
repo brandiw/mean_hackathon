@@ -8,15 +8,39 @@
 	.eightball-screen1 {
 		width: 0;
 		height: 0;
-		border-left: 100px solid transparent;
-		border-right: 100px solid transparent;
-		border-bottom: 200px solid #000080;
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+		border-bottom: 150px solid #000080;
 		/*background-color: #000080;*/
+	    margin-left: 18px;
+	    margin-top: 5px;
+	}
+
+	.ring {
+	    width: 204px;
+	    height: 204px;
+	    border-radius: 108px;
+	    border: 4px solid #222;
+	    display: flex;
+	    align-self: center;
+	    align-items: center;
+	}
+
+	.inner-ring {
+	    width: 196px;
+	    height: 196px;
+	    border-radius: 102px;
+	    border: 6px solid #777;
+	    display: flex;
+	    align-self: center;
+	    position: relative;
+	    z-index: 1;
+	    background-color: #191919;
 	}
 
 	#message1 {
 		text-align: center; 
-		margin-top: 110px; 
+		margin-top: 90px; 
 		color: white; 
 		font-size: 18px;
 	}
@@ -26,12 +50,22 @@
 		margin-top: 110px; 
 		color: #000080; 
 		font-size: 18px;
+		padding: 10px;
 	}
 
 
 	.message-container1 {
 		width: 100px;
-    	margin-left: -45px;
+    	margin-left: -50px;
+	}
+
+	.eightball-ball1 {
+	display: flex;
+    justify-content: center;
+    width: 210px;
+    height: 210px;
+    border-radius: 320px;
+    border: 210px solid #000;
 	}
 
 </style>
@@ -49,19 +83,23 @@
 	</div>
 </div> -->
 
-<div class="eightball-ball" id="eightball">
-	<div class="eightball-screen1">
-		<!-- <div ng-if="eightballmsg.shaking" class="shake-container"></div> -->	
-		<div class="message-container1">	
-			<!-- <div class="eightball-message1"> -->
-				<div id="message1" class="eightball-message1">	
-					{{eightballmsg.randommsg}}
+<div class="eightball-ball1" id="eightball">
+	<div class="ring">
+		<div class="inner-ring">
+			<div class="eightball-screen1">
+				<!-- <div ng-if="eightballmsg.shaking" class="shake-container"></div> -->	
+				<div class="message-container1">	
+					<!-- <div class="eightball-message1"> -->
+						<div id="message1" class="eightball-message1">	
+							{{eightballmsg.randommsg}}
+						</div>
+						<div ng-if="eightballmsg.shaking" class="eightball-message2">
+						</div>
+					<!-- </div> -->
 				</div>
-				<div ng-if="eightballmsg.shaking" class="eightball-message2">
-				</div>
-			<!-- </div> -->
+				<!-- </div> -->
+			</div>
 		</div>
-		<!-- </div> -->
 	</div>
 </div>
 

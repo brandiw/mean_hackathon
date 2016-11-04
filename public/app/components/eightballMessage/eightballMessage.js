@@ -15,14 +15,23 @@
 
       var randomIndex = Math.floor((Math.random() * 5));
       eightballmsg.randommsg = data.data[randomIndex].content;
-
     });
 
-    eightballmsg.shaking = false;
 
     eightballmsg.shakeIt = function() {
-        eightballmsg.shaking = true;
-        $('#message1').css("color", "red");
+      var eightballmsg = this;
+      eightballmsg.eightballs = [];
+
+      EightballService.getAllEightballs(function(data) {
+        eightballmsg.eightballs = data.data;
+
+        var randomIndex = Math.floor((Math.random() * 5));
+        eightballmsg.randommsg = data.data[randomIndex].content;
+      });
+
+
+
+        $('#message1').css("color", "#000080");
         $('#eightball').effect("shake");
         //shakeWait();
         console.log('shaking?', eightballmsg.shaking);
@@ -30,7 +39,7 @@
           eightballmsg.shaking = false;
           $('#message1').css("color", "white");
           console.log('timeout: ', eightballmsg.shaking);
-        }, 2000);
+        }, 1000);
     }
 
 
