@@ -27,11 +27,10 @@ angular.module('VerdictApp', ['ui.router'])
     templateUrl: 'app/views/coinFlip.html',
     controller: 'CoinCtrl'
   })
-  // .state('wheel', {
-  //   url: '/wheel',
-  //   templateUrl: 'app/views/wheel.html',
-    // controller: 'WheelCtrl'
-  // })
+  .state('wheel', {
+    url: '/wheel',
+    templateUrl: 'app/views/wheel.html',
+  })
   .state('idea-generator', {
     url: '/ideaGen',
     templateUrl: 'app/views/ideaGen.html',

@@ -393,10 +393,11 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 	width: 80%;
 	padding: 50px 0;
 	font-size: 48px;
-/* font-size: 18px;
- border-radius: 5px;
- background-color: #42aaf4 ;
- color: white;*/
+}
+.randomNum-genNumButton:hover {
+	border: solid #C3545B 1px;
+	color: #C3545B;
+	width: 85%;
 }
 .randomNum-minMax{
  width: 60px;
