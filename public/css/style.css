@@ -13,15 +13,15 @@ h1 {
 }
 
 a {
-	color: #333;
-	text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 a:visited {
-	color: #333;
-	text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 a:hover {
-	color: #ED8AC2;
+  color: #ED8AC2;
 }
 
 /*home*/
@@ -46,7 +46,7 @@ a:hover {
     align-content: center;
 }
 .home-icon {
-	border: 1px solid black;
+  border: 1px solid black;
     width: 200px;
     height: 200px;
     margin: 15px;
@@ -58,46 +58,46 @@ a:hover {
     font-size: 24px;
 }
 .home-eight-ball {
-	background-image: url("/img/8-ball.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
+  background-image: url("/img/8-ball.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 .home-coin-flip {
-	background-image: url("/img/coin.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
+  background-image: url("/img/coin.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 .home-idea-gen {
-	background-image: url("/img/idea.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
+  background-image: url("/img/idea.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 .home-random-num {
-	background-image: url("/img/random-num.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
+  background-image: url("/img/random-num.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 .home-wheel {
-	background-image: url("/img/wheel.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
+  background-image: url("/img/wheel.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 .home-poll {
-	background-image: url("/img/poll-2.svg	");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
+  background-image: url("/img/poll-2.svg  ");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -105,38 +105,38 @@ a:hover {
 /* ------------  EIGHTBALL STYLES  ------------- */
 
 .eightball-ball {
-	display: flex;
-	justify-content: center;
-	width: 500px;
-	height: 500px;
-	background-color: black;
-	border-radius: 250px;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  border-radius: 250px;
 }
 
 .eightball-message-container {
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	background-color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: white;
 }
 
 .eightball-shake-container {
-	display: flex;
-	align-self: center;
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	background-color: blue;
-	display: none;
+  display: flex;
+  align-self: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: blue;
+  display: none;
 }
 
 .eightball-message {
-	display: flex;
-	align-self: center;
-	font-size: 14px;
+  display: flex;
+  align-self: center;
+  font-size: 14px;
 }
 
 /*coin flip*/
@@ -300,6 +300,40 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 
 /*idea generator*/
 .idea-container {
+<<<<<<< HEAD
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+
+}
+.idea-idea {
+  padding-top: 50px;
+  font-size: 72px;
+  text-align: center;
+  color: 
+}
+.idea-button {
+  box-sizing: border-box;
+  border: solid black 1px;
+  align-self: center;
+  text-align: center;
+  margin-top: 50px;
+  width: 80%;
+  padding: 50px 0;
+  font-size: 48px;
+}
+.idea-button:hover {
+  border: solid #C3545B 1px;
+  color: #C3545B;
+  width: 85%;
+}
+.idea-bottom-img {
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  background-image: url(/img/idea.svg);
+=======
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -332,11 +366,4 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 	height: 200px;
 	margin-top: 50px;
 	background-image: url(/img/idea.svg);
-}
-
-/*navbar*/
-.navbar {
-	width: 100px;
-	position: fixed;
-	left: 0;
 }
