@@ -22,10 +22,12 @@
     "supertest": "^1.2.0"
   },
   "dependencies": {
+    "angularjs-slider": "^5.8.3",
     "body-parser": "^1.15.2",
     "express": "^4.13.4",
     "mongoose": "^4.5.5",
     "morgan": "^1.7.0",
+    "rangeslider.js": "^2.2.1",
     "wordnik-bb": "^0.1.1"
   }
 }

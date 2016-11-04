@@ -366,5 +366,43 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 	height: 200px;
 	margin-top: 50px;
 	background-image: url(/img/idea.svg);
->>>>>>> 8e9d440ce5f3ba122eb8a7e23ed820163be86b32
+}
+/*navbar*/
+.navbar {
+    width: 100px;
+    position: fixed;
+    left: 0;
+}
+
+/*randomNum */
+.randomNum {
+ width: 80%;
+ text-align: center;
+ margin: 0 auto;
+}
+.randomNum-sliderDiv {
+ width: 80%;
+ text-align: center;
+}
+.randomNum-genNumButton{
+	box-sizing: border-box;
+	border: solid black 1px;
+	align-self: center;
+	text-align: center;
+	margin-top: 50px;
+	width: 80%;
+	padding: 50px 0;
+	font-size: 48px;
+}
+.randomNum-genNumButton:hover {
+	border: solid #C3545B 1px;
+	color: #C3545B;
+	width: 85%;
+}
+.randomNum-minMax{
+ width: 60px;
+ font-size: 20px;
+}
+.rzslider {
+	height: 100px;
 }
