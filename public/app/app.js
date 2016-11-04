@@ -15,7 +15,7 @@ angular.module('VerdictApp', ['ui.router'])
   .state('randomNum', {
     url: '/randomNum',
     templateUrl: 'app/views/randomNum.html',
-    // controller: 'RandomNumCtrl'
+    controller: 'RandomNumCtrl'
   })
   .state('eightball', {
     url: '/eightball',
@@ -27,11 +27,10 @@ angular.module('VerdictApp', ['ui.router'])
     templateUrl: 'app/views/coinFlip.html',
     controller: 'CoinCtrl'
   })
-  // .state('wheel', {
-  //   url: '/wheel',
-  //   templateUrl: 'app/views/wheel.html',
-    // controller: 'WheelCtrl'
-  // })
+  .state('wheel', {
+    url: '/wheel',
+    templateUrl: 'app/views/wheel.html',
+  })
   .state('idea-generator', {
     url: '/ideaGen',
     templateUrl: 'app/views/ideaGen.html',
