@@ -71,6 +71,7 @@
     border-radius: 250px;
     background-image: url("/img/Magic_eight_ball.png");
     background-size: contain;
+    margin: 0 auto;
 	}
 
 </style>
@@ -79,8 +80,8 @@
 	<div>
 		<nav-bar></nav-bar>
 	</div>
-	<div class="eightball-container">
-		<div class=eightball-button ng-click="eightballmsg.shakeIt()">SHAKE</div>
+	<div class="eightball-container" style="width: auto; margin: 0 auto; text-align: center;">
+		<div class=eightball-button ng-click="eightballmsg.shakeIt()" style="margin: 0 auto 20px auto;">SHAKE</div>
 
 		<!-- <div class="eightball-ball" id="eightball">
 			<div class="eightball-screen">

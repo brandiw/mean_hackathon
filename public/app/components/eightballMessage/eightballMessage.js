@@ -25,7 +25,7 @@
       EightballService.getAllEightballs(function(data) {
         eightballmsg.eightballs = data.data;
 
-        var randomIndex = Math.floor((Math.random() * 5));
+        var randomIndex = Math.floor((Math.random() * 18));
         eightballmsg.randommsg = data.data[randomIndex].content;
       });
 

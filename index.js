@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(require('morgan')('dev'));
 
-app.use('/api/verdict', require('./controllers/verdict'));
+// app.use('/api/verdict', require('./controllers/verdict'));
 app.use('/random', require('./controllers/random.js'));
 app.use('/api/eightballs', require('./controllers/eightball-controller'));
 app.use('/api/poll', require('./controllers/poll-controller'));
