@@ -18,11 +18,24 @@
 
     });
 
-    console.log('HUZZAH!');
+    eightballmsg.shaking = false;
 
     eightballmsg.shakeIt = function() {
-        console.log('ITS SHAKING');
-      }
+        eightballmsg.shaking = true;
+        $('#message1').css("color", "red");
+        $('#eightball').effect("shake");
+        //shakeWait();
+        console.log('shaking?', eightballmsg.shaking);
+        setTimeout(function() {
+          eightballmsg.shaking = false;
+          $('#message1').css("color", "white");
+          console.log('timeout: ', eightballmsg.shaking);
+        }, 2000);
+    }
+
+
+
+
 
   }
 

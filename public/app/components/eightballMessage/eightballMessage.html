@@ -1,3 +1,69 @@
+<style>
+/*	.shake-container {
+		width: 50px;
+		height: 50px;
+		background-color: blue;
+	}*/
 
-{{eightballmsg.randommsg}}
+	.eightball-screen1 {
+		width: 0;
+		height: 0;
+		border-left: 100px solid transparent;
+		border-right: 100px solid transparent;
+		border-bottom: 200px solid #000080;
+		/*background-color: #000080;*/
+	}
+
+	#message1 {
+		text-align: center; 
+		margin-top: 110px; 
+		color: white; 
+		font-size: 18px;
+	}
+
+	.eightball-message2 {
+		text-align: center; 
+		margin-top: 110px; 
+		color: #000080; 
+		font-size: 18px;
+	}
+
+
+	.message-container1 {
+		width: 100px;
+    	margin-left: -45px;
+	}
+
+</style>
+
 <button ng-click="eightballmsg.shakeIt()">SHAKE</button>
+
+<!-- <div class="eightball-ball" id="eightball">
+	<div class="eightball-screen">
+		<div ng-if="eightballmsg.shaking" class="shake-container"></div>	
+		<div ng-if="!eightballmsg.shaking" class="eightball-message-container">
+			<div ng-if="!eightballmsg.shaking" class="eightball-message">
+				<div>{{eightballmsg.randommsg}}</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div class="eightball-ball" id="eightball">
+	<div class="eightball-screen1">
+		<!-- <div ng-if="eightballmsg.shaking" class="shake-container"></div> -->	
+		<div class="message-container1">	
+			<!-- <div class="eightball-message1"> -->
+				<div id="message1" class="eightball-message1">	
+					{{eightballmsg.randommsg}}
+				</div>
+				<div ng-if="eightballmsg.shaking" class="eightball-message2">
+				</div>
+			<!-- </div> -->
+		</div>
+		<!-- </div> -->
+	</div>
+</div>
+
+
+
