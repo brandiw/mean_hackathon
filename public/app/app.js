@@ -15,7 +15,7 @@ angular.module('VerdictApp', ['ui.router'])
   .state('randomNum', {
     url: '/randomNum',
     templateUrl: 'app/views/randomNum.html',
-    // controller: 'RandomNumCtrl'
+    controller: 'RandomNumCtrl'
   })
   .state('eightball', {
     url: '/eightball',

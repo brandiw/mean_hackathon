@@ -1,1 +1,19 @@
-randomNum.html
+<div class="randomNum">
+ <h2>Random Number Generator</h2>
+
+ <p>Need help choosing a number? Just select your number range using the slider and then click "Generate Random Number."</p>
+   <form ng-sumbit="getNumber()">
+     <div>Min:<input class="randomNum-minMax" type="number" ng-model="slider.minValue"></div>
+     <div>Max:<input class="randomNum-minMax" type="number" ng-model="slider.maxValue"></div>
+     <rzslider rz-slider-model="slider.minValue"
+               rz-slider-high="slider.maxValue"
+               rz-slider-options="slider.options"></rzslider>
+     <br>
+     <br>
+     <button ng-click="getNumber()" class="randomNum-genNumButton" type="button">Generate Random Number</button>
+   </form>
+
+   <h2>Your Random Number</h2>
+   <div style="font-size: 50px">{{number}}</div>
+
+</div>
