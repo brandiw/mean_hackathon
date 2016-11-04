@@ -28,6 +28,7 @@
     "mongoose": "^4.5.5",
     "morgan": "^1.7.0",
     "rangeslider.js": "^2.2.1",
+    "socket.io": "^1.5.1",
     "wordnik-bb": "^0.1.1"
   }
 }
